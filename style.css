@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100vh;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: cornflowerblue;
+}
+span {
+  background: url("https://cdn1.iconfinder.com/data/icons/customicondesign-office-shadow/256/Game-hearts.png");
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  pointer-events: none;
+  background-size: cover;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: animate 15s linear;
+}
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -5000%);
+    opacity: 0;
+  }
+}
+
+#center {
+  height: 350px;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+}
+#center img {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+#center h1 {
+  font-size: 30px;
+  margin: 10px 0px;
+}
+#center h5 {
+  font-size: 25px;
+  color: red;
+  margin: 15px;
+}
+.btn-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+#center button {
+  background-color: cadetblue;
+  color: #fff;
+  font-weight: 700;
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+#center #remove {
+  background-color: #dadada;
+  color: #111;
+}
