@@ -54,10 +54,11 @@ body {
   animation: toggleOff 0.4s linear forwards;
 }
 .input:checked + .label {
-  background-color: salmon;
+  background-color: white;
 }
 .input:checked + .label .circle {
   animation: toggleOn 0.4s linear forwards;
+  background-color: black;
 }
 @keyframes toggleOn {
   0% {
